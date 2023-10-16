@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal</title>
+    <!-- Add Tailwind CSS CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<div class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">Chrisland Schools</a>
+        <ul class="flex space-x-4">
+            <li><a routerLink="" class="hover:underline">Home</a></li>
+            <li><a routerLink="contact" class="hover:underline">About</a></li>
+            <li><a routerLink="pricing" class="hover:underline">Pricing</a></li>
+            <li><a routerLink="contact" class="hover:underline">Create Account</a></li>
+            <li><a routerLink="todo" class="hover:underline">Add todo</a></li>
+            <li><a  class="hover:underline">News</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="container mx-auto mt-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="text-center bg-gray-100 p-12">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">Welcome to Chrisland Schools</h1>
+            <p class="text-lg text-gray-600">Your Gateway to Education and Excellence</p>
+            <p class="mt-4 text-gray-700">We're excited to have you on board. At Chrisland Schools, we are dedicated to providing a world-class education and fostering personal growth. Our website is your portal to explore our programs, connect with our community, and stay updated on the latest news and events.</p>
+            <a href="#about" class="mt-6 inline-block bg-blue-600 text-white font-semibold px-6 py-2 rounded hover:bg-blue-700">Learn More >>></a>
+        </div>
+        <div class="text-center">
+            <img src="https://media.istockphoto.com/id/1409722748/photo/students-raising-hands-while-teacher-asking-them-questions-in-classroom.webp?b=1&s=170667a&w=0&k=20&c=wmjzzESyHcSDFXYI1qzngse-EIj7aBMfebEaqjT8cjM=" alt="School Image" class="rounded-lg shadow-lg">
+        </div>
+    </div>
+</div>
+<!-- https://hv10wt9v-4200.uks1.devtunnels.ms/ -->
+<div class="container mx-auto mt-12">
+    <h2 class="text-3xl font-bold mb-6">Our Students</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+        <div class="bg-white p-4 rounded-lg shadow">
+            <img src="https://media.istockphoto.com/id/1457154805/photo/diverse-group-of-women-are-nursing-or-medical-students-at-local-university.webp?b=1&s=170667a&w=0&k=20&c=bfTIX5XHenh6mLDP67pusvXfeHWGwDj920jWsGUX4ts=" alt="Student 1" class="w-full h-40 object-cover rounded-lg">
+            <p class="text-gray-1000">Nursing</p>
+            <p class="mt-2 text-sm text-gray-700">Dive into the world of our school subjects. Discover the diverse range of subjects offered at our school, from mathematics and science to the arts and humanities. Explore the opportunities for academic growth and personal development.</p>
+
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+            <img src="https://media.istockphoto.com/id/1410950079/photo/modern-style-classroom-in-the-morning-3d-render.webp?b=1&s=170667a&w=0&k=20&c=D3KekIGN_W76ScIe_vKZURixg0hXdXnbPfhKywcItro=" alt="Student 1" class="w-full h-40 object-cover rounded-lg">
+            <p class="text-gray-600">Student ClassRoom</p>
+            <p class="mt-2 text-sm text-gray-700">Our approach to education centers on subject-based learning. Learn how each subject plays a vital role in shaping our students' knowledge and skills. Explore the comprehensive curriculum we offer in each subject area.</p>
+
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+            <img src="https://media.istockphoto.com/id/1500076821/photo/happy-black-teenage-girl-in-high-school-hallway-looking-at-camera.webp?b=1&s=170667a&w=0&k=20&c=-JVK0FSz-zDgbHz_Jw7ufIKjp8H_Ie9jCxEFjH_2hes=" alt="Student 1" class="w-full h-40 object-cover rounded-lg">
+            <p class="text-gray-600">Condusive Environment</p>
+            <p class="mt-2 text-sm text-gray-700">At our school, we believe in enriching education through a wide spectrum of school subjects. Discover how our students gain a well-rounded education, with opportunities to excel in subjects that match their interests and talents.</p>            
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2Nob29sfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Student 1" class="w-full h-40 object-cover rounded-lg">
+            <p class="text-gray-600">Easy learning</p>
+            <p class="mt-2 text-sm text-gray-700">At our school, we believe in enriching education through a wide spectrum of school subjects. Discover how our students gain a well-rounded education, with opportunities to excel in subjects that match their interests and talents.</p>            
+        </div>
+    </div>
+</div>
+
+<section class="py-8">
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Course Catalog</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <div class="bg-white p-4 rounded-lg shadow">
+                <h3 class="text-lg font-semibold">Course Title</h3>
+                <p class="text-gray-600">Course Description</p>
+                <p class="text-gray-600">Prerequisites: Prerequisite Details</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-8">
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Faculty Directory</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow">
+                <h3 class="text-lg font-semibold">Faculty Name</h3>
+                <p class="text-gray-600">Position: Faculty Position</p>
+                <p class="text-gray-600">Email: faculty.email@example.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="bg-white-600 text-black py-4 mt-8">
+    <div class="container mx-auto text-center">
+        &copy; 2023 School Portal. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
