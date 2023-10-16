@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 interface contactInterface {
-    Firstname:string,
-    Lastname:string,
+    Fullname:string,
+    Username:string,
     Email:string,
     Phone:string,
     Gender:string,
@@ -15,8 +15,8 @@ interface contactInterface {
   styleUrls: ['./createcontact.component.css']
 })
 export class ContactComponent {
-  public firstname:string= ''
-  public lastname :string= ''
+  public fullname:string= ''
+  public username :string= ''
   public email:string= ''
   public phone :string= ''
   public gender:string = ''
@@ -33,8 +33,8 @@ export class ContactComponent {
     }
   addContact() {
     let contactObject = {
-      Firstname:this.firstname,
-      Lastname:this.lastname,
+      Fullname:this.fullname,
+      Username:this.username,
       Email:this.email,
       Phone:this.phone,
       Gender:this.gender,

@@ -1,3 +1,26 @@
+ <div *ngFor="let contact of contactArray; let i = index" class="bg-gray-100 p-4 m-2 rounded-lg shadow-md">
+          <div class="text-xl font-semibold">Welcome , {{ contact.Firstname }}</div>
+          <div class="mt-2">
+            <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700" [routerLink]="[i]">View User Details</button>
+          </div>
+          <div class="mt-2">
+            <button class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700" (click)="deleteUser(i)">Delete User Details</button>
+          </div>
+          <div class="mt-2">
+            <button class="px-4 py-2 bg-green-500 text-white rounded hover:bg-blue-700" >Edit User Details</button>
+          </div>
+        </div>
+      </div>
+      </div>      
+      
+      (click)="addContact()"
+
+      [(ngModel)]="password"
+      [(ngModel)]="gender"
+      [(ngModel)]="phone"
+      [(ngModel)]="email"
+      [(ngModel)]="firstname"
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,23 +38,23 @@
         <h2 class="text-2xl font-semibold mb-4">Register</h2>
         <form>
           <div class="mb-4">
-            <label for="firstname" class="block text-gray-600 font-medium">Full_Name</label>
+            <label for="firstname" class="block text-gray-600 font-medium">First Name</label>
             <input
               type="text"
               name="firstname"
               class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-              placeholder="Enter your FullName"
-              [(ngModel)]="fullname"
+              placeholder="Enter your first name"
+              [(ngModel)]="firstname"
             />
           </div>
           <div class="mb-4">
-            <label for="lastname" class="block text-gray-600 font-medium">UserName</label>
+            <label for="lastname" class="block text-gray-600 font-medium">Last Name</label>
             <input
               type="text"
               name="lastname"
               class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-              placeholder="Enter your User_name"
-              [(ngModel)]="username"
+              placeholder="Enter your last name"
+              [(ngModel)]="lastname"
             />
           </div>
           <div class="mb-4">
@@ -56,12 +79,13 @@
           </div>
           <div class="mb-4">
             <label for="gender" class="block text-gray-600 font-medium">Gender</label>
-            <select name="gender" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300" [(ngModel)]="gender">
-              <option value="Choose your gender">Choose your gender</option>
-                 <option value="Male">Male</option>
-                 <option value="Female">Female</option>
-                 <option value="Prefer not to say">Prefer not to say</option>
-            </select>
+            <input
+              type="text"
+              name="gender"
+              class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+              placeholder="Enter your gender"
+              [(ngModel)]="gender"
+            />
           </div>
           <div class="mb-4">
             <label for="password" class="block text-gray-600 font-medium">Password</label>
@@ -84,14 +108,14 @@
       </div>
     </div>
     
-    <div class="flex flex-wrap justify-center items-center">
+    <div class="flex justify-center items-center">
       <div class="grid grid-cols-3 gap-4">
-        <div *ngFor="let contact of contactArray; let i = index" class="bg-white p-4 m-2 rounded-lg shadow-md">
-          <div class="text-xl font-semibold">Welcome, {{ contact.Username }}</div>
+        <div *ngFor="let contact of contactArray; let i = index" class="bg-gray-100 p-4 m-2 rounded-lg shadow-md">
+          <div class="text-xl font-semibold">Welcome, {{ contact.Firstname }}</div>
           <div class="mt-2">
             <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700" [routerLink]="[i]">View User Details</button>
           </div>
-          <div class="mt-2 ms-4">
+          <div class="mt-2">
             <button class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700" (click)="deleteUser(i)">Delete User Details</button>
           </div>
           <div class="mt-2">
