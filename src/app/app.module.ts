@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddtocartComponent } from './addtocart/addtocart.component';
@@ -11,6 +10,8 @@ import { PricingComponent } from './pricing/pricing.component';
 import { TodoComponent } from './todo/todo.component';
 import { DisplayContactComponent } from './display-contact/display-contact.component';
 import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
