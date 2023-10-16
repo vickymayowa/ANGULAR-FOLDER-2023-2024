@@ -10,7 +10,7 @@ import { ContactComponent } from './createcontact/createcontact.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { TodoComponent } from './todo/todo.component';
 import { DisplayContactComponent } from './display-contact/display-contact.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +25,7 @@ import { DisplayContactComponent } from './display-contact/display-contact.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

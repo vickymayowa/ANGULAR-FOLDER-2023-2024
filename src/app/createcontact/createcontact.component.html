@@ -11,7 +11,7 @@
   </head>
   <body class="bg-gray-100">
     <div class="flex h-screen justify-center items-center">
-      <div class="bg-white p-8 rounded shadow-md w-120">
+      <div class="bg-white p-8 rounded shadow-md ">
         <h2 class="text-2xl font-semibold mb-4">Register</h2>
         <form>
           <div class="mb-4">
@@ -22,8 +22,8 @@
               type="text"
               name="firstname"
               class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-              />
               [(ngModel)]="firstname"
+              />
           </div>
           <div class="mb-4">
             <label for="email" class="block text-gray-600 font-medium"
@@ -33,8 +33,8 @@
               type="text"
               name="lastname"
               class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+              [(ngModel)]="lastname"
             />
-            [(ngModel)]="lastname"
           </div>
           <div class="mb-4">
             <label for="email" class="block text-gray-600 font-medium"
@@ -44,8 +44,8 @@
               type="email"
               name="email"
               class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+              [(ngModel)]="email"
             />
-            [(ngModel)]="email"
           </div>
           <div class="mb-4">
             <label for="password" class="block text-gray-600 font-medium"
@@ -55,8 +55,8 @@
               type="number"
               name="number"
               class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+              [(ngModel)]="phone"
             />
-            [(ngModel)]="phone"
           </div>
           <div class="mb-4">
             <label for="Gender" class="block text-gray-600 font-medium"
@@ -66,8 +66,8 @@
               type="text"
               name="password"
               class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+              [(ngModel)]="gender"
             />
-            [(ngModel)]="gender"
           </div>
           <div class="mb-4">
             <label
@@ -79,17 +79,33 @@
               type="password"
               name="confirm-password"
               class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-              required
+              [(ngModel)]="gender"
             />
           </div>
           <button
             type="submit"
             class="bg-blue-500 text-white font-medium py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
+            (click)="addContact()"
           >
             Register
           </button>
         </form>
       </div>
-    </div>
+      <div>
+        <div *ngFor="let contact of contactArray; let i = index" class="bg-gray-100 p-4 m-2 rounded-lg shadow-md">
+          <div class="text-xl font-semibold">{{ contact.Firstname }}</div>
+          <div class="mt-2">
+            <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700" [routerLink]="[i]">View User Details</button>
+          </div>
+          <div class="mt-2">
+            <button class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700" (click)="deleteUser(i)">Delete User Details</button>
+          </div>
+          <div class="mt-2">
+            <button class="px-4 py-2 bg-green-500 text-white rounded hover:bg-blue-700" >Edit User Details</button>
+          </div>
+        </div>
+      </div>
+      </div>      
+      
   </body>
 </html>

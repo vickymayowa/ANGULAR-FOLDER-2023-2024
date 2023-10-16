@@ -14,13 +14,21 @@ interface contactInterface {
   styleUrls: ['./createcontact.component.css']
 })
 export class ContactComponent {
-  public firstname = ''
-  public lastname = ''
-  public email = ''
-  public phone = ''
-  public gender = ''
+  public firstname:string= ''
+  public lastname :string= ''
+  public email:string= ''
+  public phone :string= ''
+  public gender:string = ''
   public contactArray:contactInterface[]=[]
 
+    ngOnInit(){
+      if(localStorage["contactDetails"]){
+        this.contactArray = JSON.parse(localStorage.getItem("contactDetails")!)
+        console.log(this.contactArray);
+      }else{
+        this.contactArray=[]
+      }
+    }
   addContact() {
     let contactObject = {
       Firstname:this.firstname,
@@ -31,5 +39,11 @@ export class ContactComponent {
     }
     this.contactArray.push(contactObject)
     console.log(this.contactArray)
+    localStorage.setItem("contactDetails",JSON.stringify(this.contactArray))
+  }
+  deleteUser(index:number){
+    // console.log(index)
+    this.contactArray.splice(index,1)
+    localStorage.setItem("contactDetails",JSON.stringify(this.contactArray))
   }
 }
