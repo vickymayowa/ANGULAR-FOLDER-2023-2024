@@ -79,7 +79,7 @@
               type="password"
               name="confirm-password"
               class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
-              [(ngModel)]="gender"
+              [(ngModel)]="password"
             />
           </div>
           <button
@@ -93,7 +93,7 @@
       </div>
       <div>
         <div *ngFor="let contact of contactArray; let i = index" class="bg-gray-100 p-4 m-2 rounded-lg shadow-md">
-          <div class="text-xl font-semibold">{{ contact.Firstname }}</div>
+          <div class="text-xl font-semibold">Welcome , {{ contact.Firstname }}</div>
           <div class="mt-2">
             <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700" [routerLink]="[i]">View User Details</button>
           </div>

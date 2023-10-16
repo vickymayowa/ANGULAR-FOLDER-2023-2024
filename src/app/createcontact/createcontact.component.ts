@@ -5,7 +5,8 @@ interface contactInterface {
     Lastname:string,
     Email:string,
     Phone:string,
-    Gender:string
+    Gender:string,
+    Password:string,
 }
 
 @Component({
@@ -19,6 +20,7 @@ export class ContactComponent {
   public email:string= ''
   public phone :string= ''
   public gender:string = ''
+  public password:string = ''
   public contactArray:contactInterface[]=[]
 
     ngOnInit(){
@@ -36,6 +38,7 @@ export class ContactComponent {
       Email:this.email,
       Phone:this.phone,
       Gender:this.gender,
+      Password:this.password,
     }
     this.contactArray.push(contactObject)
     console.log(this.contactArray)
