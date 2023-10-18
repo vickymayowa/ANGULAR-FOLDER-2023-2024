@@ -8,7 +8,8 @@ interface contactInterface {
   Phone:string,
   Gender:string,
   Password:string,
-  status:string,
+  Status:string,
+  Address:string,
 }
 
 @Component({
@@ -19,17 +20,30 @@ interface contactInterface {
 export class DisplayContactComponent {
   constructor(public actRoute:ActivatedRoute){}
   contactIndex : number = 0 
+  contactObject:contactInterface = {
+    Fullname:'',
+    Username:'',
+    Email:'',
+    Address:'',
+    Phone:'',
+    Gender:'',
+    Password:'',
+    Status:'Active',
+  }
 
   ngOnInit(){
     let contactArray = JSON.parse(localStorage["contactDetails"])
-    console.log(contactArray);
-    console.log(this.actRoute)
-    console.log(this.actRoute.snapshot.params["id"]);
+
+    // console.log(contactArray);
+    // console.log(this.actRoute.snapshot.params["id"]);
+
     this.contactIndex = this.actRoute.snapshot.params["id"]
+    console.log(this.contactIndex);
 
-
-    contactArray.find((contact:contactInterface,index:number)=>{
-
-    })
+    contactArray[this.contactIndex]
+    this.contactObject = contactArray[this.contactIndex]
+    console.log(contactArray);
+    
+    // this.contactObject = contactArray.find((contact:contactInterface,index:number)=>this.contactIndex==index)
   }
 }

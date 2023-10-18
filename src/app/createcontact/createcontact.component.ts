@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 interface contactInterface {
     Fullname:string,
@@ -8,6 +8,7 @@ interface contactInterface {
     Gender:string,
     Password:string,
     status:string,
+    Address:string,
 }
 
 @Component({

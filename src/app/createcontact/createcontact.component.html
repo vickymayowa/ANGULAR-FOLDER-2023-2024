@@ -110,5 +110,23 @@
         </div>
       </div>
     </div>
+    <!-- <div class="flex flex-wrap justify-center items-center">
+      <div class="grid grid-cols-3 gap-4">
+        <div *ngFor="let contact of contactArray; let i = index" class="bg-white p-4 m-2 rounded-lg shadow-md">
+          <div class="text-xl font-semibold">Welcome, {{ contact.Username }}</div>
+          <div class="mt-2">
+            <a [routerLink]="[i]">
+              <mat-icon color="primary" class="cursor-pointer">visibility</mat-icon>
+            </a>
+          </div>
+          <div class="mt-2 ms-4">
+            <mat-icon (click)="deleteUser(i)" color="warn" class="cursor-pointer">delete</mat-icon>
+          </div>
+          <div class="mt-2">
+            <mat-icon color="primary" class="cursor-pointer">edit</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div> -->
   </body>
 </html>

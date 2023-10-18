@@ -10,6 +10,10 @@ import { PricingComponent } from './pricing/pricing.component';
 import { TodoComponent } from './todo/todo.component';
 import { DisplayContactComponent } from './display-contact/display-contact.component';
 import { FormsModule } from '@angular/forms';
+import { EditContactComponent } from './edit-contact/edit-contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -22,11 +26,15 @@ import { FormsModule } from '@angular/forms';
     PricingComponent,
     TodoComponent,
     DisplayContactComponent,
+    EditContactComponent,
+    // MatIconModule,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
