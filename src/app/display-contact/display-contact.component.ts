@@ -2,14 +2,17 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 interface contactInterface {
-  Fullname:string,
-  Username:string,
-  Email:string,
-  Phone:string,
-  Gender:string,
-  Password:string,
-  Status:string,
-  Address:string,
+    Fullname: string;
+    Username: string;
+    Email: string;
+    Phone: string;
+    Gender: string;
+    Password: string;
+    Status: string;
+    Address: string;
+    DateOfBirth: string;
+    CreatedAt: Date;
+    UpdatedAt: Date;
 }
 
 @Component({
@@ -28,7 +31,10 @@ export class DisplayContactComponent {
     Phone:'',
     Gender:'',
     Password:'',
-    Status:'Active',
+    Status:'',
+    DateOfBirth:'',
+    CreatedAt: new Date(),
+    UpdatedAt: new Date(),
   }
 
   ngOnInit(){
