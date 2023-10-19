@@ -7,8 +7,11 @@ interface contactInterface {
     Phone:string,
     Gender:string,
     Password:string,
-    status:string,
+    Status:string,
     Address:string,
+    DateOfBirth:string,
+    CreatedAt:number,
+    // UpdatedAt:Date,
 }
 
 @Component({
@@ -17,15 +20,19 @@ interface contactInterface {
   styleUrls: ['./createcontact.component.css']
 })
 export class ContactComponent {
-  public fullname:string= ''
-  public username :string= ''
-  public email:string= ''
-  public phone :string= ''
-  public gender:string = ''
-  public password:string = ''
-  public status:string = 'Active'
-  public address:string = ''
-  public contactArray:contactInterface[]=[]
+    public fullname: string = '';
+    public username: string = '';
+    public email: string = '';
+    public phone: string = '';
+    public gender: string = '';
+    public password: string = '';
+    public status: string = '';
+    public address: string = '';
+    public dob: string = '';
+    public contactArray: contactInterface[] = [];
+    public createdAt: Number = new Date().getDate();
+    public updatedAt: Date = new Date();
+      
 
     ngOnInit(){
       if(localStorage["contactDetails"]){
@@ -43,8 +50,11 @@ export class ContactComponent {
       Phone:this.phone,
       Gender:this.gender,
       Password:this.password,
-      status:this.status,
+      Status:this.status,
       Address:this.address,
+      DateOfBirth:this.dob,
+      CreatedAt: this.createdAt,
+      UpdatedAt: this.updatedAt,
     }
     this.contactArray.push(contactObject)
     console.log(this.contactArray)
