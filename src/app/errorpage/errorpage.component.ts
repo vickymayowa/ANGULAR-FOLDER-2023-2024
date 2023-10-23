@@ -1,4 +1,19 @@
 import { Component } from '@angular/core';
+import { ContactService } from '../services/contact.service';
+
+interface ContactInterface {
+  Fullname: string;
+  Username: string;
+  Email: string;
+  Phone: string;
+  Gender: string;
+  Password: string;
+  Status: string;
+  Address: string;
+  DateOfBirth: string;
+  CreatedAt: Date;
+  // UpdatedAt: Date;
+}
 
 @Component({
   selector: 'app-errorpage',
@@ -7,11 +22,12 @@ import { Component } from '@angular/core';
 })
 export class ErrorpageComponent {
   public showArray:number[]=[];
-  constructor(public contactService:CreatecontactService){}
+  public createContact:ContactInterface[]=[]
+  constructor(public contactService:ContactService){}
   ngOnInit(){
-    console.log(this.contactService.getcreateContactArray());
-    
+    this.createContact=this.contactService.getcreateContactArray()
+    console.log(this.createContact);
     this.showArray=this.contactService.getcontactArray()
-    console.log(this.showArray);
+    
   }
 }

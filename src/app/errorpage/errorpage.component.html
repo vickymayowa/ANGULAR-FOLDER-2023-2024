@@ -6,8 +6,17 @@
     <title>error page</title>
 </head>
 <body>
-    <div>
-
+    <div *ngFor="let show of showArray">
+        <p>{{show}}</p>
     </div>
+    <div class="row" *ngFor="let contact 
+    contactService ">
+        <div>
+            <p>{{contact.Fullname}}</p>
+            <p>{{contact.Username}}</p>
+            <p>{{contact.Email}}</p>
+        </div>
+    </div>
+
 </body>
 </html>
