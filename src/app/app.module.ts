@@ -14,6 +14,7 @@ import { EditContactComponent } from './edit-contact/edit-contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { AdminComponent } from './admin/admin.component';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { AdminComponent } from './admin/admin.component';
     EditContactComponent,
     // MatIconModule,
     AdminComponent,
+    ErrorpageComponent,
   ],
   imports: [
     BrowserModule,

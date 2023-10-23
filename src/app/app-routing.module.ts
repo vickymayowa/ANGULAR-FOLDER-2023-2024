@@ -8,6 +8,7 @@ import { DisplayContactComponent } from './display-contact/display-contact.compo
 import { EditContactComponent } from './edit-contact/edit-contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { adminGuard } from './guards/admin.guard';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
@@ -18,7 +19,9 @@ const routes: Routes = [
   {path:"contact",children:[
     {path:"",component:ContactComponent},
     {path:":id",component:DisplayContactComponent},
-  ]}
+  ]},
+  {path:"**",component:ErrorpageComponent}
+
 ];
 
 @NgModule({
