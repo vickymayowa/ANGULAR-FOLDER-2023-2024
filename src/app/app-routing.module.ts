@@ -9,6 +9,7 @@ import { EditContactComponent } from './edit-contact/edit-contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { adminGuard } from './guards/admin.guard';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { DisplayApiComponent } from './display-api/display-api.component';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
     {path:"",component:ContactComponent},
     {path:":id",component:DisplayContactComponent},
   ]},
-  {path:"**",component:ErrorpageComponent}
+  {path:"**",component:ErrorpageComponent},
+  {path:"userapi",component:DisplayApiComponent},
 
 ];
 

@@ -15,7 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { AdminComponent } from './admin/admin.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
-
+import { DisplayApiComponent } from './display-api/display-api.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,12 +32,14 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
     // MatIconModule,
     AdminComponent,
     ErrorpageComponent,
+    DisplayApiComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

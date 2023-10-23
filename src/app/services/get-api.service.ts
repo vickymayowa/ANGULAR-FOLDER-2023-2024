@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class GetApiService {
 
-  constructor() { }
+  constructor(public getApi:HttpClient) { }
+  getApiArray(){
+    return this.getApi.get('https://jsonplaceholder.typicode.com/users')
+  }
 }
