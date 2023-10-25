@@ -17,6 +17,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { DisplayApiComponent } from './display-api/display-api.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AdminComponent,
     ErrorpageComponent,
     DisplayApiComponent,
+    PipeComponent,
   ],
   imports: [
     BrowserModule,

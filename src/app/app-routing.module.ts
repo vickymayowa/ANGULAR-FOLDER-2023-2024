@@ -10,10 +10,12 @@ import { AdminComponent } from './admin/admin.component';
 import { adminGuard } from './guards/admin.guard';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { DisplayApiComponent } from './display-api/display-api.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
   {path: 'pricing', component:PricingComponent},
+  {path: 'pipe',component:PipeComponent},
   {path: 'admin', component:AdminComponent},
   {path: 'editContact', component:EditContactComponent},
   {path: 'todo', component:TodoComponent},

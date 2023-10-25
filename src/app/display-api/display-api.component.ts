@@ -15,7 +15,7 @@ export class DisplayApiComponent {
       this.apiArray = response
       console.log(this.apiArray);
     },(error)=>{
-      console.log(error);
+      console.log(error.message);
       
     })
   }

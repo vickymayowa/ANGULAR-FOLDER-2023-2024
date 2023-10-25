@@ -8,7 +8,7 @@ interface ContactInterface {
     Gender: string;
     Password: string;
     Status: string;
-    Address: string;
+    Address: string; 
     DateOfBirth: string;
     CreatedAt: Date;
     // UpdatedAt: Date;
