@@ -18,6 +18,8 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { DisplayApiComponent } from './display-api/display-api.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { PipeComponent } from './pipe/pipe.component';
+import { State1Component } from './state1/state1.component';
+import { State2Component } from './state2/state2.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { PipeComponent } from './pipe/pipe.component';
     ErrorpageComponent,
     DisplayApiComponent,
     PipeComponent,
+    State1Component,
+    State2Component,
   ],
   imports: [
     BrowserModule,

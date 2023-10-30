@@ -11,6 +11,7 @@ import { adminGuard } from './guards/admin.guard';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { DisplayApiComponent } from './display-api/display-api.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { State1Component } from './state1/state1.component';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'pipe',component:PipeComponent},
   {path: 'admin', component:AdminComponent},
   {path: 'editContact', component:EditContactComponent},
+  {path: 'state1',component:State1Component},
   {path: 'todo', component:TodoComponent},
   {path:"contact",children:[
     {path:"",component:ContactComponent},
