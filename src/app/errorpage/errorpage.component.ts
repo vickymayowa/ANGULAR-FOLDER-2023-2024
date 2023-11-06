@@ -25,9 +25,9 @@ export class ErrorpageComponent {
   public createContact:ContactInterface[]=[]
   constructor(public contactService:ContactService){}
   ngOnInit(){
-    this.createContact=this.contactService.getcreateContactArray()
-    console.log(this.createContact);
-    this.showArray=this.contactService.getcontactArray()
+    // this.createContact=this.contactService.getcreateContactArray()
+    // console.log(this.createContact);
+    // this.showArray=this.contactService.getcontactArray()
     
   }
 }

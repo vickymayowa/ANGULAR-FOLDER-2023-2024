@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { ReactiveService } from '../services/reactive.service';
-// import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-reactive',
-  templateUrl: './reactive.component.html',
-  styleUrls: ['./reactive.component.css']
+  selector: 'app-rea-form',
+  templateUrl: './rea-form.component.html',
+  styleUrls: ['./rea-form.component.css']
 })
-export class ReactiveComponent {
+export class ReaFormComponent {
   constructor(public newapi:ReactiveService){}
   public receivenames:string[]=[]
   ngOnInit(){

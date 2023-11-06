@@ -23,6 +23,7 @@ import { State2Component } from './state2/state2.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { ReactiveComponent } from './reactive/reactive.component';
+import { ReaFormComponent } from './rea-form/rea-form.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { ReactiveComponent } from './reactive/reactive.component';
     ParentComponent,
     ChildComponent,
     ReactiveComponent,
+    ReaFormComponent,
   ],
   imports: [
     BrowserModule,

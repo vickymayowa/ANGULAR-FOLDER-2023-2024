@@ -5,10 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class ReactiveService {
 
-  names:string[]=['Oyin','Daniel','Ayo','Olu']
-  
+  public names:string[]=['Oyin','Daniel','Ayo','Olu']
+  public name:string = 'Hello, How are you doing?'
   getNames(){
     return  this.names
   }
-
+  getname(){
+    return this.name
+  }
 }

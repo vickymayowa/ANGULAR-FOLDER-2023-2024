@@ -13,7 +13,7 @@ import { DisplayApiComponent } from './display-api/display-api.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { State1Component } from './state1/state1.component';
 import { ParentComponent } from './parent/parent.component';
-import { ReactiveComponent } from './reactive/reactive.component';
+import { ReaFormComponent } from './rea-form/rea-form.component';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
@@ -30,9 +30,7 @@ const routes: Routes = [
   ]},
   {path:"**",component:ErrorpageComponent},
   {path:"userapi",component:DisplayApiComponent},
-  {path:"reactive",component:ReactiveComponent},
-
-
+  {path:"reactive",component:ReaFormComponent},
 ];
 
 @NgModule({
