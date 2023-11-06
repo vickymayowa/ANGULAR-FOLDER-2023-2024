@@ -20,6 +20,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { PipeComponent } from './pipe/pipe.component';
 import { State1Component } from './state1/state1.component';
 import { State2Component } from './state2/state2.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { ReactiveComponent } from './reactive/reactive.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,9 @@ import { State2Component } from './state2/state2.component';
     PipeComponent,
     State1Component,
     State2Component,
+    ParentComponent,
+    ChildComponent,
+    ReactiveComponent,
   ],
   imports: [
     BrowserModule,

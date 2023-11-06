@@ -7,11 +7,13 @@ import { TodoComponent } from './todo/todo.component';
 import { DisplayContactComponent } from './display-contact/display-contact.component';
 import { EditContactComponent } from './edit-contact/edit-contact.component';
 import { AdminComponent } from './admin/admin.component';
-import { adminGuard } from './guards/admin.guard';
+// import { adminGuard } from './guards/admin.guard';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { DisplayApiComponent } from './display-api/display-api.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { State1Component } from './state1/state1.component';
+import { ParentComponent } from './parent/parent.component';
+import { ReactiveComponent } from './reactive/reactive.component';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
@@ -20,6 +22,7 @@ const routes: Routes = [
   {path: 'admin', component:AdminComponent},
   {path: 'editContact', component:EditContactComponent},
   {path: 'state1',component:State1Component},
+  {path: 'parent',component:ParentComponent},
   {path: 'todo', component:TodoComponent},
   {path:"contact",children:[
     {path:"",component:ContactComponent},
@@ -27,6 +30,8 @@ const routes: Routes = [
   ]},
   {path:"**",component:ErrorpageComponent},
   {path:"userapi",component:DisplayApiComponent},
+  {path:"reactive",component:ReactiveComponent},
+
 
 ];
 

@@ -1,0 +1,8 @@
+<div>
+    <textarea [(ngModel)]="comment" name="" id="" cols="30" rows="10"></textarea>
+    <button (click)="sendComment()"></button>
+</div>
+<div>
+    <p>message from parent : {{sendPost}}</p>
+    <p>message from child : {{comment}}</p>
+</div>
