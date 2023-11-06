@@ -12,7 +12,7 @@ import { DisplayContactComponent } from './display-contact/display-contact.compo
 import { FormsModule } from '@angular/forms';
 import { EditContactComponent } from './edit-contact/edit-contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatIconModule } from '@angular/material/icon';
+// import { MatIconModule } from '@angular/material/icon';
 import { AdminComponent } from './admin/admin.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { DisplayApiComponent } from './display-api/display-api.component';
@@ -24,6 +24,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { ReactiveComponent } from './reactive/reactive.component';
 import { ReaFormComponent } from './rea-form/rea-form.component';
+import { ApiFormComponent } from './api-form/api-form.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { ReaFormComponent } from './rea-form/rea-form.component';
     ChildComponent,
     ReactiveComponent,
     ReaFormComponent,
+    ApiFormComponent,
   ],
   imports: [
     BrowserModule,
