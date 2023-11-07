@@ -9,10 +9,12 @@ import { ApiFormService } from '../services/api-form.service';
 })
 export class ApiFormComponent {
   constructor(public newapi: ApiFormService) {}
+  public fetchedData: any;
   ngOnInit() {
     console.log(this.newapi.getApi());
     this.newapi.getApi().subscribe(
       (data) => {
+        this.fetchedData = data;
         console.log(data);
       },
       (error) => {
