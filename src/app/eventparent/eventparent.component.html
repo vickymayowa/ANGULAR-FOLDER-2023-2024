@@ -1,0 +1,13 @@
+<p>eventparent works!</p>
+<div>
+    <input type="text" [(ngModel)]="MsgTochild">
+    <button class="btn btn-info" (click)="sendMsg()">Send Message</button>
+</div>
+
+<div class="">
+    <p>MEssage of MsgToChild
+        <span class="text-danger">{{receiveResponse}}</span>
+    </p>
+</div>
+
+<app-eventchild [receiveMsg]="msgToChild2" (childEmitter)="receiveEmitMsg($event)"></app-eventchild>

@@ -15,6 +15,7 @@ import { State1Component } from './state1/state1.component';
 import { ParentComponent } from './parent/parent.component';
 // import { ReaFormComponent } from './rea-form/rea-form.component';
 import { ApiFormComponent } from './api-form/api-form.component';
+import { EventparentComponent } from './eventparent/eventparent.component';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
@@ -33,6 +34,8 @@ const routes: Routes = [
   {path:"userapi",component:DisplayApiComponent},
   // {path:"reactive",component:ReaFormComponent},
   {path:"apiForm",component:ApiFormComponent},
+  {path:"event",component:EventparentComponent},
+  // {path:"event",component:},
   
 ];
 

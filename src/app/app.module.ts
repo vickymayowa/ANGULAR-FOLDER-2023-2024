@@ -25,6 +25,8 @@ import { ChildComponent } from './child/child.component';
 import { ReactiveComponent } from './reactive/reactive.component';
 import { ReaFormComponent } from './rea-form/rea-form.component';
 import { ApiFormComponent } from './api-form/api-form.component';
+import { EventchildComponent } from './eventchild/eventchild.component';
+import { EventparentComponent } from './eventparent/eventparent.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { ApiFormComponent } from './api-form/api-form.component';
     ReactiveComponent,
     ReaFormComponent,
     ApiFormComponent,
+    EventchildComponent,
+    EventparentComponent,
   ],
   imports: [
     BrowserModule,
