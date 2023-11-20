@@ -28,6 +28,14 @@ import { ApiFormComponent } from './api-form/api-form.component';
 import { EventchildComponent } from './eventchild/eventchild.component';
 import { EventparentComponent } from './eventparent/eventparent.component';
 import { RegisterComponent } from './register/register.component';
+import { MaterialComponent } from './material/material.component';
+// import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
+// import {Observable} from 'rxjs';
+// import {map, startWith} from 'rxjs/operators';
+import {NgFor, AsyncPipe} from '@angular/common';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -55,6 +63,7 @@ import { RegisterComponent } from './register/register.component';
     EventchildComponent,
     EventparentComponent,
     RegisterComponent,
+    MaterialComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +71,14 @@ import { RegisterComponent } from './register/register.component';
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule,
+    NgFor,
+    AsyncPipe
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -18,6 +18,7 @@ import { ApiFormComponent } from './api-form/api-form.component';
 import { EventparentComponent } from './eventparent/eventparent.component';
 import { RegisterComponent } from './register/register.component';
 import { ReactiveComponent } from './reactive/reactive.component';
+import { MaterialComponent } from './material/material.component';
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
@@ -39,6 +40,7 @@ const routes: Routes = [
   {path:"event",component:EventparentComponent},
   {path:"register",component:RegisterComponent},
   {path:"reactive",component:ReactiveComponent},
+  {path:"material",component:MaterialComponent},
 ];
 
 @NgModule({
