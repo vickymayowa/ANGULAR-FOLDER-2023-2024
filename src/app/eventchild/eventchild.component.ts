@@ -1,4 +1,6 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+// import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-eventchild',
@@ -6,11 +8,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./eventchild.component.css']
 })
 export class EventchildComponent {
-  @Input() receiveMsg=''
-  public sendToParent = ''
-  @Output () childEmitter = new EventEmitter
+  // @Input() receiveMsg=''
+  // public sendToParent = ''
+  // @Output () childEmitter = new EventEmitter
 
-  sendMsg(){
-    this.childEmitter.emit(this.sendToParent)
-  }
+  // sendMsg(){
+  //   this.childEmitter.emit(this.sendToParent)
+  // }
 }

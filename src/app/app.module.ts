@@ -9,7 +9,7 @@ import { ContactComponent } from './createcontact/createcontact.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { TodoComponent } from './todo/todo.component';
 import { DisplayContactComponent } from './display-contact/display-contact.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditContactComponent } from './edit-contact/edit-contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { MatIconModule } from '@angular/material/icon';
@@ -62,6 +62,7 @@ import { RegisterComponent } from './register/register.component';
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

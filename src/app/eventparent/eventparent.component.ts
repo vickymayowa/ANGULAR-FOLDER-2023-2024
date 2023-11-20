@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./eventparent.component.css']
 })
 export class EventparentComponent {
-  public MsgTochild=''
-  public msgToChild2=''
+  // public MsgTochild=''
+  // public msgToChild2=''
 
-  sendMsg(){
-    this.msgToChild2=this.msgToChild2
-    console.log(this.msgToChild2)
-  }
+  // sendMsg(){
+  //   this.msgToChild2=this.msgToChild2
+  //   console.log(this.msgToChild2)
+  // }
 }
