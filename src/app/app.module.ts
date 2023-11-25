@@ -36,6 +36,8 @@ import {NgFor, AsyncPipe} from '@angular/common';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { RegisterbackendComponent } from './registerbackend/registerbackend.component';
+import { LoginbackendComponent } from './loginbackend/loginbackend.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +66,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     EventparentComponent,
     RegisterComponent,
     MaterialComponent,
+    RegisterbackendComponent,
+    LoginbackendComponent,
   ],
   imports: [
     BrowserModule,
