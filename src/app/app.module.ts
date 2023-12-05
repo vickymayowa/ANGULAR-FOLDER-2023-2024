@@ -38,6 +38,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { RegisterbackendComponent } from './registerbackend/registerbackend.component';
 import { LoginbackendComponent } from './loginbackend/loginbackend.component';
+import { DashboardbackendComponent } from './dashboardbackend/dashboardbackend.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { LoginbackendComponent } from './loginbackend/loginbackend.component';
     MaterialComponent,
     RegisterbackendComponent,
     LoginbackendComponent,
+    DashboardbackendComponent,
   ],
   imports: [
     BrowserModule,
